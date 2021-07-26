@@ -1,0 +1,13 @@
+body {
+  background-color: #171717;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+#opening-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
