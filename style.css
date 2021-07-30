@@ -28,6 +28,7 @@ body {
   border-radius: 35px 35px 0px 0px;
   color: #171717;
   text-align: center;
+  text-decoration: none;
 
   transform: translateY(1400px);
 }
