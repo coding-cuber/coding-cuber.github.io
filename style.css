@@ -23,6 +23,15 @@ body {
   padding: 0px;
 }
 
+#blog-title {
+  position: absolute;
+  text-align: center;
+
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #about-section {
   padding-bottom: 600px;
 
@@ -32,6 +41,24 @@ body {
   text-align: center;
 
   transform: translateY(1400px);
+}
+
+#blog-feed {
+  background-color: white;
+
+  height: 1400px;
+  opacity: 0;
+  width: 20%;
+  padding: 200px;
+  border-radius: 35px 35px 0px 0px;
+  color: #171717;
+  text-align: center;
+
+  transform: translateY(600px);
+}
+
+#blog-feed:hover {
+  opacity: 0.1;
 }
 
 ::-webkit-scrollbar {
