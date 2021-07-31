@@ -6,6 +6,8 @@ body {
 
   margin: 0px;
   padding: 0px;
+
+  scroll-behavior: smooth;
 }
 
 #opening-screen {
@@ -22,17 +24,57 @@ body {
 }
 
 #about-section {
-  padding-bottom: 1120px;
+  padding-bottom: 600px;
 
   background-color: white;
   border-radius: 35px 35px 0px 0px;
   color: #171717;
   text-align: center;
-  text-decoration: none;
 
   transform: translateY(1400px);
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+#navbar {
+  font-weight: 300;
+  font-size: 30px;
+  position: fixed;
+  z-index: 9999;
+  background-color: #171717;
+  padding-right: 100%;
+  padding-bottom: 20px;
+  white-space: nowrap;
+  float: none;
+}
+
+.navbar-item {
+  margin: 10px;
+  color: white;
+  position: relative; top: 5px;
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  height: 160px;
+  background-color: #171717;
+  z-index: 9998;
+
+  transform: translateY(1400px);
+}
+
+.icon {
+  position:absolute;
+  top: 50px;
+}
+
+.footer-link {
+  position:absolute;
+  top: 70px;
+  left: 95%;
+  text-decoration: none;
+  color: white;
 }
