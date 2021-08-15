@@ -27,15 +27,21 @@ body {
   position: absolute;
   text-align: center;
 
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.blog-link {
+  color: grey;
+  z-index: 9997;
+  text-decoration: none;
 }
 
 #about-section {
   padding-bottom: 600px;
 
-  background-color: white;
+  background-color: #e6e1e1;
   border-radius: 35px 35px 0px 0px;
   color: #171717;
   text-align: center;
@@ -47,18 +53,20 @@ body {
   background-color: white;
 
   height: 1400px;
-  opacity: 0;
+
   width: 20%;
   padding: 200px;
   border-radius: 35px 35px 0px 0px;
   color: #171717;
   text-align: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
 
   transform: translateY(600px);
 }
 
 #blog-feed:hover {
-  opacity: 0.1;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 ::-webkit-scrollbar {
