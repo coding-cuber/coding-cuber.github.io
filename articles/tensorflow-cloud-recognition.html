@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Recognising Cloud Formations With TensorFlow Machine Learning</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,6 +17,49 @@
       <a class="navbar-item" href="../index.html#contact-header">Contact</a>
     </div>
 
+    <div class="tensorflow-article-bg">
+        <img style="height: 1080px; width: 1080px" src="CloudvisionArticleHeaderImage.png"></img>
+    </div>
+
+    <div id="article-text-container">
+      <center>
+          <h1>Recognising Cloud Formations With TensorFlow Machine Learning</h1>
+          <h2 style="font-weight: 200;">September 10th, 2021</h2>
+      </center>
+
+      <br>
+      <br>
+
+      <p style="font-weight: 400;">
+        The main feature of my project, Cloudvision, is the ability to identify a cloud formation by simply pointing you phone's camera towards the sky.
+        Quite honestly, I knew this was going to be the trickiest part if the project from day one. Dart is an incredible language and no doubt you can
+        do anything you could do in another language, but that isn't the problem. The problem is something inherent to almost every modern programming language,
+        that is, the lack of packages. Sure, there are hundreds of Flutter state-management packages out there, but when it comes to something as simple as a half-
+        usable image manipulation package, nothing. I was trying to keep all code in Dart to avoid messy cross-language logic but it was starting to become evident
+        that this was not going to happen. The way I saw it, I was going to spend a couple months writing a custom neural network in Python that I could then use in
+        Cloudvision. However, this changed when I watched the Google IO 2021 Developer Conference, where <a href="https://pub.dev/packages/tflite" style="text-decoration: none; color: #4287f5">TensorFlow Lite</a>
+        was released for Flutter. This was huge news for me and cut at least 2 months of work down to 2 weeks. Incase you are unaware of what TensorFlow is, here is an explanation.
+        <br>
+        <br>
+        TensorFlow is a Machine Learning library released by Google in 2015. Written in Python, it features various functions for easy application of trained models.
+        Google also offers a simple online tool for training a model. <a style="text-decoration: none; color: #4287f5" href="https://teachablemachine.withgoogle.com/">Teachable Machine</a>
+        is a web-based application for training machines. One of the key features are the image classification models. All you do is upload a dataset of images to each class and click a button. In
+        a matter of minutes, a model is created, ready to be exported to TensorFlow.
+        <br>
+        <br>
+        Now that I have touched on exactly what TensorFlow is, let me showcase how easy it was to implement it into the app. After installing the tflite package, you download your Teachable Machine
+        model into the directory. In the code, you must first load this model like so:
+
+        <center><img src="code-snippet.png"></img></center>
+
+        <p style="font-weight: 400;">After this, to input something into this model and return a result, all you need to do is create a short function:</p>
+
+        <center><img src="code-snippet1.png"></img></center>
+
+        <p style="font-weight: 400;">Check out the full project <a style="text-decoration: none; color: #4287f5" href="https://github.com/william-herring/cloudvision">here.</a></p>
+
+      </p>
+    </div>
 
   </body>
 </html>

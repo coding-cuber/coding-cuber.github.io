@@ -49,6 +49,21 @@ body {
   transform: translateY(1400px);
 }
 
+#article-text-container {
+  padding: 50px;
+  padding-bottom: 600px;
+  border-style: solid;
+  line-height: 1.6;
+
+  border-radius: 35px 35px 0px 0px;
+  border-color: #e6e1e1;
+  border-width: thick;
+  color: #e6e1e1;
+  text-align: center;
+
+  transform: translateY(1046px);
+}
+
 #blog-feed {
   background-color: white;
 
@@ -102,8 +117,17 @@ body {
 }
 
 .icon {
-  position:absolute;
+  position: absolute;
   top: 50px;
+}
+
+.tensorflow-article-bg {
+  position: absolute;
+  text-align: center;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-link {
