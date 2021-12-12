@@ -1,60 +1,221 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>William Herring</title>
+    <link href="/styles/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="navbar">
-      <a class="navbar-item" style="margin-left: 15px;" href="https://william-herring.github.io/">Home</a>
-      <a class="navbar-item" href="#about-section">About</a>
-      <a class="navbar-item" href="https://github.com/william-herring?tab=repositories">Projects</a>
-      <a class="navbar-item" href="https://william-herring.github.io/blog">Blog</a>
-      <a class="navbar-item" href="#contact-header">Contact</a>
-    </div>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
 
-    <div id="opening-screen">
-      <div id="opening-title">
-        <h1 style="font-size: 150px;">
-          Welcome.
-        </h1>
-      </div>
-      <h4 style="font-weight: 300; font-size: 30px;">
-        Scroll for more
-      </h4>
+<div>
+    <nav class="bg-white shadow ">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class=" flex items-center">
+                    <a class="flex-shrink-0" href="/">
+                        <h1 class="font-semibold">William Herring</h1>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a class="text-gray-500  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="#home">
+                                Home
+                            </a>
+                            <a class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="#projects">
+                                Projects
+                            </a>
+                            <a class="text-gray-500  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="#technologies">
+                                Technologies
+                            </a>
+                            <a class="text-gray-500  hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium" href="#contact">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button class="text-gray-800 hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                        <svg width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#home">
+                    Home
+                </a>
+                <a class="text-gray-500 block px-3 py-2 rounded-md text-base hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#projects">
+                    Projects
+                </a>
+                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#technologies">
+                    Technologies
+                </a>
+                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#contact">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="flex h-screen justify-center items-center">
+        <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-4xl items-center" id="home">
+            <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">I'm William</h5>
+            <p class="font-normal text-gray-700 p-6">I am a high school student from Melbourne interested in software development.
+                I began programming when I was 8 and have learnt a lot since. I spend most of my time making web or mobile apps.
+                Right now, my favourite technologies are Flutter, Django and React. I also work on some games with Unity. You can check out all my work in
+                the projects tab.
+            </p>
+            <a href="#projects" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
+                See more
+                <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
     </div>
+</div>
 
-    <div id="about-section">
-      <br>
-      <br>
-      <h1 id="about-header" style="font-weight: 700; font-size: 50px;">About me</h1>
-      <p style="font-weight: 300; font-size: 20px;">I'm William. I am currently a high school student in Melbourne and have had a passion for programming as long as I can remember.</p>
-      <p style="font-weight: 300; font-size: 20px;">I enjoy coding in pretty much any language, although I use Python, C#, JavaScript/TypeScript and Dart the most. As for frameworks, I always enjoy messing around in Unity, Flutter or Django.</p>
-      <br>
-      <p style="font-weight: 300; font-size: 20px;">Outside of programming, I also enjoy cubing (solving various types of Rubik's Cubes). I regularly attend competitions and average around 12.5 seconds on 3x3.</p>
-      <p style="font-weight: 300; font-size: 20px;">Anyway, that's all there really is to know about me.</p>
-      <br>
-      <br>
-      <h1 style="font-weight: 700; font-size: 50px;">What is this site for?</h1>
-      <p style="font-weight: 300; font-size: 20px;">Here, you will mostly find examples and development blogs on a range of projects I have been developing.</p>
-      <p style="font-weight: 300; font-size: 20px;">This might include recounts of my development process, working showcases and any other random coding-related stuff I decide to put on here.</p>
-      <p style="font-weight: 300; font-size: 20px;">Most content on this site will relate directly to any project that has a public GitHub repository so the code is accessible to anyone.</p>
-      <br>
-      <br>
-      <h1 id="contact-header" style="font-weight: 700; font-size: 50px;">Contact</h1>
-      <p style="font-weight: 300; font-size: 20px;">You can reach me at <a style="text-decoration: none;" href="mailto:william.herring.au@gmail.com">my email</a> or on <a style="text-decoration: none;" href="https://twitter.com/wherring_au">Twitter</a></p>
+<div style="margin-top: 500px"></div>
+
+<div class="flex h-screen justify-center items-center">
+    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-7xl items-center" id="projects">
+        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center mb-8">Projects</h5>
+        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
+            <img class="rounded-t-lg" src="/images/cloudvision.png" alt="" />
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Cloudvision</h5>
+                </a>
+                <p class="font-normal text-gray-700 mb-3">
+                    Cloudvision is a mobile app that allows users to recognise cloud species by taking a photo. I used Flutter for this app, and made use of
+                    TensorFlow machine learning for the cloud recognition feature. It was made as part of an entry for the Science Talent Search Victoria 2021.
+                </p>
+                <a href="https://github.com/william-herring/cloudvision" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    GitHub
+                </a>
+                <a href="https://apps.apple.com/au/app/cloudvision/id1597605747" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    App Store
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
+            <img class="rounded-t-lg" src="/images/pogbot.png" alt="" />
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Pogbot</h5>
+                </a>
+                <p class="font-normal text-gray-700 mb-3">
+                    Pogbot is a multi-purpose Discord bot created while experimenting with the Discord.py library.
+                    Features include competitions, leaderboards, quote generator, audio player and a Python compiler.
+                </p>
+                <a href="https://github.com/william-herring/pogbot" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
+            <img class="rounded-t-lg" src="/images/edgeoftime.png" alt="" />
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Edge of Time</h5>
+                </a>
+                <p class="font-normal text-gray-700 mb-3">
+                    Edge of Time was a game created for the VimJam 2 game jam - a game making competition where you have limited
+                    time to make a game based on a theme. I worked with a friend to complete this (hence the amazing pixel art) and it
+                    turned out great considering the timeframe. We used the Unity game engine to create this.
+                </p>
+                <a href="https://github.com/william-herring/VimJam-2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    GitHub
+                </a>
+                <a href="https://brainiac-games.itch.io/edge-of-time" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+                    Itch
+                </a>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div id="footer">
-      <a href="https://twitter.com/wherring_au">
-        <img src="https://www.pngkey.com/png/full/11-111779_share-on-twitter-twitter-icon-white-no-background.png" width=60px; height=60px; class="icon" style="left: 20px;">
-      </a>
+<div style="margin-top: 500px"></div>
 
-      <a href="mailto:william.herring.au@gmail.com" class="footer-link" >Email me</a>
+<div class="flex h-screen justify-center items-center">
+    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-4xl items-center" id="technologies">
+        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">Technologies</h5>
+        <p class="font-normal text-gray-700 p-6 text-center">I can use pretty much any language or framework, but I have some favourites. Here are my top 4 most used technologies. The bars indicate my confidence with that particular technology.
+        </p>
+        <br>
+        <div class="mb-1 flex justify-between">
+            <span class="text-base text-blue-700 font-medium">Flutter</span>
+            <span class="text-sm font-medium text-blue-700">85%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+        </div>
+
+        <br>
+
+        <div class="mb-1 flex justify-between">
+            <span class="text-base text-blue-700 font-medium">React</span>
+            <span class="text-sm font-medium text-blue-700">80%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+        </div>
+
+        <br>
+
+        <div class="mb-1 flex justify-between">
+            <span class="text-base text-blue-700 font-medium">Unity</span>
+            <span class="text-sm font-medium text-blue-700">70%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+        </div>
+
+        <br>
+
+        <div class="mb-1 flex justify-between">
+            <span class="text-base text-blue-700 font-medium">Django</span>
+            <span class="text-sm font-medium text-blue-700">65%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+        </div>
     </div>
-  </body>
+</div>
+
+<div style="margin-top: 100px"></div>
+
+<div class="flex h-screen justify-center items-center">
+    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-7xl items-center" id="contact">
+        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">Contact</h5>
+        <p class="font-normal text-gray-700 p-6 text-center">Feel free to email me, or DM me on Twitter.</p>
+
+        <br>
+
+        <a href="mailto:william.herring.au@gmail.com" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
+            Email
+        </a>
+        <a href="https://twitter.com/wherring_au" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
+            Twitter
+        </a>
+    </div>
+</div>
+
+<div class="w-screen bottom-0 left-0">
+    <p class="font-normal text-gray-700 p-6">© 2021 William Herring. All Rights Reserved.</p>
+</div>
+</body>
 </html>
