@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!-- Title --></title>
+    <link href="/styles/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+    <div id="content"></div>
+<body>
+<div id="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+    document.getElementById("content").innerHTML = marked.parse("# **Test page** \nThis is a test page.");
+    document.title = "# **Test page** \nThis is a test page."
+    </script>
+</body>
+</html>
