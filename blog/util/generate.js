@@ -22,6 +22,7 @@ const template = fs.readFileSync(templatePath, 'utf8', (e, data) => {
     return data
 })
 
+// TODO: Update title properly
 const buildHtml = () => {
     const head = template.split('<!DOCTYPE html>').pop().split('<body>')[0]
     const selection = template.split('<body>').pop().split('</body>')
@@ -45,4 +46,4 @@ stream.once('open', (fd) => {
     stream.end(content)
 })
 
-console.log('Successfully wrote (blog/pages/page.md) to ' + filePath)
+console.log(`Successfully wrote ${pagePath} to ` + filePath)

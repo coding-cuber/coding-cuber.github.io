@@ -9,14 +9,13 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
-    <div id="content"></div>
 <body>
 <div id="content"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-    document.getElementById("content").innerHTML = marked.parse("# **Test page** \nThis is a test page.");
-    document.title = "# **Test page** \nThis is a test page."
+    document.getElementById("content").innerHTML = marked.parse("# **Test page** \nThis is a test page.*I created this page as a means of testing the blog page generation.*![Tux](https://mdg.imgix.net/assets/images/tux.png?auto=format&fit=clip&q=40&w=100)");
+    document.title = "# **Test page** \nThis is a test page.*I created this page as a means of testing the blog page generation.*![Tux](https://mdg.imgix.net/assets/images/tux.png?auto=format&fit=clip&q=40&w=100)"
     </script>
 </body>
 </html>
