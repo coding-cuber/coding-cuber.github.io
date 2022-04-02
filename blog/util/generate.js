@@ -24,18 +24,16 @@ const template = fs.readFileSync(templatePath, 'utf8', (e, data) => {
 
 // TODO: Update title properly
 const buildHtml = () => {
-    const head = template.split('<!DOCTYPE html>').pop().split('<body>')[0]
-    const selection = template.split('<body>').pop().split('</body>')
+    const title = page.split('\n')[0].replace(/\*|#/g, '');
+    const content = page.replace(/(\r\n|\n|\r)/gm, '')
 
-    const content = page.replace(/(\r\n|\n|\r)/gm, "")
-
-    return '<!DOCTYPE html>' + head + selection[0] +
-    `<body>\n<div id="content"></div>\n
+    return template.replace('<!-- CONTENT START -->', `
+    <div id="content" class="mt-32"></div>\n
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
     document.getElementById("content").innerHTML = marked.parse("${content}");
-    document.title = "${content}"
-    </script>\n</body>` + selection[1]
+    document.title = "${title}"
+    </script>`)
 }
 
 const stream = fs.createWriteStream(filePath)
