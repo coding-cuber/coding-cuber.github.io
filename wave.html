@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wave</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        .typewriter {
+            overflow: hidden; 
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .05em;
+            animation: 
+                typing 2.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100px;
+            width: 100%;
+            background: url('images/wave.png');
+            background-size: 2000px 100px;
+            animation: wave 8s linear infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position-x: 2000px;
+            }
+            100% {
+                background-position-x: 0;
+            }
+        }
+    </style>
+</head>
+<body style='background-color: #0c111c;'>
+    <div class='flex flex-col justify-center items-center h-screen'>
+        <p class='text-red-500 font-black text-center tracking-wide text-8xl typewriter p-6'>Wave</p>
+        <a href="#1" class='animate-bounce'>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.51489 8.465L11.9999 16.95L20.4849 8.465L19.0709 7.05L11.9999 14.122L4.92889 7.05L3.51489 8.465Z" fill="#FFFF"></path>
+            </svg> 
+        </a>           
+        <div class='wave'></div>
+    </div>
+    <div class='bg-red-500 h-screen' id='1'>
+        <div class='flex flex-col items-center'>
+            <h1 class='text-white font-extrabold text-center text-6xl p-6'>This is Wave.</h1>
+            <img width='400' src='images/wavescreenshot.png'>
+        </div>
+    </div>
+</body>
+</html>

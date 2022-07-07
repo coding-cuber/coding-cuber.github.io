@@ -1,10 +1,7 @@
-# **Test page** \n
+# What Does the Future of Authentication Look Like? \n
 
-This is a test page. Testing, 
-Testing \n
+Passwords have become the standard when it comes to user authentication. The issue is, they aren't secure and they are impractical. \n
 
-## Check out this image \n
+\n
 
-*I created this page as a means of testing the blog page generation.*
-
-![Tux](https://mdg.imgix.net/assets/images/tux.png?auto=format&fit=clip&q=40&w=100)
+Almost every other week we hear about a major security breach of user logins on platforms with huge user bases. The reality is that it is incredibly easy to obtain an email/passwords nowdays. Admittedly, measures such as multi-factor authentication have greatly improved general security, but it still has some flaws. Multi-factor authentication is typically opt-in and time consuming.
