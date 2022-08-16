@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "generate": "node blog/util/generate.js"
+    "generate": "node blog/util/generate.js",
+    "tailwind": "npx tailwindcss -i ./styles/index.css -o ./dist/output.css --watch"
   },
 
   "devDependencies": {
