@@ -2,215 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>William Herring</title>
-    <link href="/styles/index.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="build.css" rel="stylesheet">
+    <title>William Herring</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
-<body>
+<body class='font-poppins bg-gray-800 text-white'>
+    <div class='bg-gray-800 flex w-screen p-6 sticky top-0 items-center'>
+        <a href='#' class='font-semibold text-lg'>William Herring</a>
+        <div class='h-10 border-r-2 mx-6 border-gray-500'>
+        </div>
+        <div class='text-gray-500 text-lg space-x-6 flex'>
+            <a href='#about-me' class='hover:text-gray-400'>
+                About me
+            </a>
+            <a href='#projects' class='hover:text-gray-400'>
+                Projects
+            </a>
+            <div class='dropdown'>
+                <a href='TS637.html' class='flex items-center hover:text-gray-400'>
+                    TS637
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z" fill="#6b7280"></path>
+                    </svg>                    
+                </a>
+                <div class="dropdown-content pr-10 rounded-b-md p-2">
+                    <a href="TS637.html#theory" class='hover:text-gray-600'>Theory</a>
+                    <a href="TS637.html#graphics" class='hover:text-gray-600'>Graphics</a>
+                    <a href="TS637.html#audio" class='hover:text-gray-600'>Audio</a>
+                    <a href="TS637.html#video" class='hover:text-gray-600'>Video</a>
+                  </div>
+            </div>
+        </div>
+        <a href='mailto:william.herring.au@gmail.com' class='p-2 ml-auto text-md border-2 font-semibold rounded-lg hover:bg-white hover:text-gray-800'>Get in touch</a>
+    </div>
+    <div class='flex h-screen px-24 items-center'>
+        <div class='mb-28 w-96'>
+            <h1 class='text-6xl font-bold'>
+                I'm William.
+            </h1>
+            <p class='text-gray-500 mt-2 text-lg'>
+                I'm a student and fullstack developer from Melbourne.
+            </p>
+        </div>
+        <img class='ml-auto w-80 mb-28 rounded-full' src='images/me.JPG'>
+    </div>
+    <div id='about-me' class='flex h-screen px-24'>
+        <div>
+            <h1 class='text-4xl font-semibold underline underline-offset-8 mt-28'>
+                About me
+            </h1>
+            <p class='text-gray-500 mt-4 text-lg'>
+                I'm 15 years old, in Year 9 attending Highvale Secondary College. I have many interests that take up my time outside of school. Some of these include:
+            </p>
 
-<div>
-    <nav class="bg-white shadow fixed w-screen">
-        <div class="max-w-7xl px-8">
-            <div class="flex items-center justify-start h-16">
-                <div class="flex items-center">
-                    <a class="flex-shrink-0" href="/">
-                        <h1 class="font-semibold">William Herring</h1>
-                    </a>
-
-                    <a href="https://github.com/william-herring" class="ml-4" target="_blank">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" fill="#2E3A59"></path>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/wherring_au" class="ml-4" target="_blank">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.995 6.68799C20.8914 6.15208 21.5622 5.30823 21.882 4.31399C21.0397 4.81379 20.118 5.16587 19.157 5.35499C17.8246 3.94552 15.7135 3.60251 14.0034 4.51764C12.2933 5.43277 11.4075 7.37948 11.841 9.26999C8.39062 9.09676 5.17598 7.4669 2.99702 4.78599C1.85986 6.74741 2.44097 9.25477 4.32502 10.516C3.64373 10.4941 2.97754 10.3096 2.38202 9.97799C2.38202 9.99599 2.38202 10.014 2.38202 10.032C2.38241 12.0751 3.82239 13.8351 5.82502 14.24C5.19308 14.4119 4.53022 14.4372 3.88702 14.314C4.45022 16.0613 6.06057 17.2583 7.89602 17.294C6.37585 18.4871 4.49849 19.1342 2.56602 19.131C2.22349 19.1315 1.88123 19.1118 1.54102 19.072C3.50341 20.333 5.78739 21.0023 8.12002 21C11.3653 21.0223 14.484 19.7429 16.7787 17.448C19.0734 15.1531 20.3526 12.0342 20.33 8.78899C20.33 8.60299 20.3257 8.41799 20.317 8.23399C21.1575 7.62659 21.8828 6.87414 22.459 6.01199C21.676 6.35905 20.8455 6.58691 19.995 6.68799Z" fill="#2E3A59"></path>
-                        </svg>
-                    </a>
-                    
-                    <div class="hidden md:block">
-                        <div class="flex ml-6 space-x-4">
-                            <a class="text-gray-500  hover:text-gray-800 py-2 rounded-md text-sm font-medium" href="#home">
-                                Home
-                            </a>
-                            <a class="text-gray-500 hover:text-gray-800 py-2 rounded-md text-sm font-medium" href="#projects">
-                                Projects
-                            </a>
-                            <a class="text-gray-500  hover:text-gray-800 py-2 rounded-md text-sm font-medium" href="#technologies">
-                                Technologies
-                            </a>
-                            <a class="text-gray-500  hover:text-gray-800 py-2 pr rounded-md text-sm font-medium" href="#contact">
-                                Contact
-                            </a>
-                        </div>
+            <div class='flex justify-center space-x-6 mt-6'>
+                <div class='flex flex-col w-1/3 border-2 rounded-lg p-12 text-center bg-white bg-opacity-0 hover:bg-opacity-10'>
+                    <h2 class='font-semibold'>Speedcubing</h2>
+                    <p class='text-gray-500 text-sm mt-2'>
+                        Speedcubing involves solving various types of Rubik's Cubes
+                        as fast as possible. I have been competing for over 3 years and I have
+                        attended almost 10 competitions. In December, I will compete in the continental
+                        championship.
+                    </p>
+                </div>
+                <div class='flex flex-col w-1/3 border-2 rounded-lg p-12 text-center bg-white bg-opacity-0 hover:bg-opacity-10'>
+                    <h2 class='font-semibold'>Programming</h2>
+                    <p class='text-gray-500 text-sm mt-2'>
+                        I have been programming for 7 years. I am always working on projects and learning new technologies.
+                        You can keep up with my projects on GitHub.
+                        <a class='flex justify-center p-6' href='https://github.com/william-herring'>
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" fill="#fff"></path>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+                <div class='flex flex-col w-1/3 border-2 rounded-lg p-12 text-center bg-white bg-opacity-0 hover:bg-opacity-10'>
+                    <h2 class='font-semibold'>Tennis</h2>
+                    <p class='text-gray-500 text-sm mt-2'>
+                        This year, I have been playing tennis. I used to play tennis when I was younger, but have only just come back to it.
+                        I play for Knox Gardens Tennis Club.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='projects' class='h-screen px-24'>
+        <h1 class='text-4xl font-semibold underline underline-offset-8 mt-28'>
+            Projects
+        </h1>
+        <div class='flex flex-col justify-center mt-8 space-y-8'>
+            <div class='flex items-center'>
+                <img src="images/cloudvision.png" class='rounded-lg w-72'>
+                <div class='flex flex-col ml-6'>
+                    <h1 class='font-semibold text-2xl'>Cloudvision</h1>
+                    <p class='font-light'>Cloudvision is a mobile app that allows users to recognise cloud species by taking a photo. 
+                        I used Flutter for this app, and made use of TensorFlow machine learning for the cloud recognition feature. 
+                        It won a major bursary in the Science Talent Search Victoria 2021.
+                    </p>
+                    <div class='flex'>
+                        <a href='https://apps.apple.com/au/app/cloudvision/id1597605747'>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM7.727 14.787C7.598 14.7878 7.46951 14.8032 7.344 14.833L7.194 14.874L6.6 15.891C6.37467 16.2669 6.48338 16.7534 6.84727 16.9976C7.21116 17.2418 7.70258 17.158 7.965 16.807L8.027 16.714L8.817 15.343C8.55744 14.9959 8.15043 14.7901 7.717 14.787H7.727ZM13.211 8.66C12.8999 8.95227 12.6936 9.33883 12.624 9.76C12.5125 10.3407 12.6193 10.9422 12.924 11.449L15.964 16.715C16.1125 16.9661 16.3823 17.1204 16.674 17.121C16.7991 17.1206 16.9225 17.0919 17.035 17.037C17.4205 16.8469 17.5948 16.3921 17.435 15.993L17.386 15.893L16.586 14.502H17.776C18.2084 14.4984 18.5642 14.1608 18.5906 13.7291C18.6169 13.2975 18.3047 12.9192 17.876 12.863L17.776 12.857H15.636L13.442 9.057L13.213 8.657L13.211 8.66ZM6.26 12.85C6.15402 12.8501 6.04908 12.8708 5.951 12.911C5.85161 12.9525 5.76126 13.013 5.685 13.089C5.53094 13.2435 5.4446 13.4528 5.445 13.671C5.44514 14.0854 5.753 14.4352 6.164 14.488L6.264 14.493H13.744C13.9118 14.1556 13.9055 13.7578 13.727 13.426C13.575 13.1149 13.2773 12.9005 12.934 12.855L12.813 12.849H10.262L13.79 6.74C13.8987 6.55063 13.9281 6.326 13.872 6.115C13.8162 5.90362 13.6778 5.72349 13.488 5.615C13.131 5.40943 12.677 5.49912 12.425 5.825L12.363 5.917L12 6.551L11.641 5.917C11.4925 5.66592 11.2227 5.51164 10.931 5.511C10.8056 5.51145 10.6818 5.54016 10.569 5.595C10.1837 5.78588 10.0097 6.24065 10.169 6.64L10.218 6.74L11.048 8.2L8.363 12.85H6.26Z" fill="#fff"></path>
+                            </svg>
+                        </a>
+                        <a href='https://github.com/william-herring/cloudvision'>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" fill="#fff"></path>
+                            </svg>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='flex items-center'>
+                <img src="images/liveed.png" class='rounded-lg h-32'>
+                <div class='flex flex-col ml-6'>
+                    <h1 class='font-semibold text-2xl'>Liveed</h1>
+                    <p class='font-light'>Liveed is a web application built with Next.js for sharing live update feeds.
+                    </p>
+                    <div class='flex'>
+                        <a href='https://liveed.vercel.app'>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 17H14V15H17C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9H14V7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17ZM10 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H10V9H7C5.34315 9 4 10.3431 4 12C4 13.6569 5.34315 15 7 15H10V17ZM17 13H7V11H17V13Z" fill="#fff"></path>
+                            </svg>
+                        </a>
+                        <a href='https://github.com/william-herring/liveed'>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" fill="#fff"></path>
+                            </svg>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='flex items-center'>
+                <img src="images/eventron.png" class='h-14'>
+                <div class='flex flex-col ml-32'>
+                    <h1 class='font-semibold text-2xl'>Eventron</h1>
+                    <p class='font-light'>Eventron is a web app currently under development as part of my TS632A software project.
+                        It is designed as an event management and discovery platform.
+                    </p>
+                    <div class='flex'>
+                        <a href='https://github.com/william-herring/eventron'>
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z" fill="#fff"></path>
+                            </svg>   
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#home">
-                    Home
-                </a>
-                <a class="text-gray-500 block px-3 py-2 rounded-md text-base hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#projects">
-                    Projects
-                </a>
-                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#technologies">
-                    Technologies
-                </a>
-                <a class="text-gray-500 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium" href="#contact">
-                    Contact
-                </a>
-            </div>
-        </div>
-    </nav>
-    <div class="flex h-screen justify-center items-center">
-        <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-4xl items-center" id="home">
-            <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">I'm William</h5>
-            <p class="font-normal text-gray-700 p-6">I am a high school student from Melbourne interested in software development.
-                I began programming when I was 8 and have learnt a lot since. I spend most of my time making web or mobile apps.
-                Right now, my favourite technologies are Flutter and Next.js. I have also worked on some games with Unity. You can check out all my work in
-                the projects tab.
-            </p>
-            <a href="#projects" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
-                See more
-                <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-        </div>
     </div>
-</div>
-
-<div class="flex h-9/12 justify-center items-center">
-    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-7xl items-center" id="projects">
-        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center mb-8">Projects</h5>
-        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
-            <img class="rounded-t-lg" src="/images/cloudvision.png" />
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Cloudvision</h5>
-                </a>
-                <p class="font-normal text-gray-700 mb-3">
-                    Cloudvision is a mobile app that allows users to recognise cloud species by taking a photo. I used Flutter for this app, and made use of
-                    TensorFlow machine learning for the cloud recognition feature. It was made as part of an entry for the Science Talent Search Victoria 2021.
-                </p>
-                <a href="https://github.com/william-herring/cloudvision" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
-                    GitHub
-                </a>
-                <a href="https://apps.apple.com/au/app/cloudvision/id1597605747" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
-                    App Store
-                </a>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
-            <img class="rounded-t-lg" src="/images/liveed.png" />
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Liveed</h5>
-                </a>
-                <p class="font-normal text-gray-700 mb-3">
-                    Liveed is a web application built with Next.js for sharing live update feeds.
-                </p>
-                <a href="https://github.com/william-herring/liveed" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
-                    GitHub
-                </a>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="bg-white border border-gray-200 rounded-lg max-w-xl max-h-lg">
-            <img class="rounded-t-lg" src="/images/edgeoftime.png" />
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Edge of Time</h5>
-                </a>
-                <p class="font-normal text-gray-700 mb-3">
-                    Edge of Time was a game created for the VimJam 2 game jam - a game making competition where you have limited
-                    time to make a game based on a theme. I worked with a friend to complete this (hence the amazing pixel art) and it
-                    turned out great considering the timeframe. We used the Unity game engine to create this.
-                </p>
-                <a href="https://github.com/william-herring/VimJam-2" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
-                    GitHub
-                </a>
-                <a href="https://brainiac-games.itch.io/edge-of-time" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
-                    Itch
-                </a>
-            </div>
-        </div>
+    <div class='w-screen text-center p-12'>
+        © William Herring 2022. All Rights Reserved.
     </div>
-</div>
-
-<div class="flex h-screen justify-center items-center">
-    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-4xl items-center" id="technologies">
-        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">Technologies</h5>
-        <p class="font-normal text-gray-700 p-6 text-center">I can use pretty much any language or framework, but I have some favourites. Here are my top 4 most used technologies. The bars indicate my confidence with that particular technology.
-        </p>
-        <br>
-        <div class="mb-1 flex justify-between">
-            <span class="text-base text-blue-700 font-medium">Flutter</span>
-            <span class="text-sm font-medium text-blue-700">85%</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
-        </div>
-
-        <br>
-
-        <div class="mb-1 flex justify-between">
-            <span class="text-base text-blue-700 font-medium">Next.js</span>
-            <span class="text-sm font-medium text-blue-700">80%</span>
-        </div>
-
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
-        </div>
-
-        <br>
-
-        <div class="mb-1 flex justify-between">
-            <span class="text-base text-blue-700 font-medium">Unity</span>
-            <span class="text-sm font-medium text-blue-700">70%</span>
-        </div>
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
-        </div>
-
-        <br>
-
-        <div class="mb-1 flex justify-between">
-            <span class="text-base text-blue-700 font-medium">Django</span>
-            <span class="text-sm font-medium text-blue-700">65%</span>
-        </div>
-
-        <div class="w-full bg-gray-200 rounded-full h-2.5">
-            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
-        </div>
-    </div>
-</div>
-
-<div class="flex h-screen justify-center items-center">
-    <div class="bg-white p-6 shadow-md border border-gray-200 rounded-lg max-w-7xl items-center" id="contact">
-        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 text-center">Contact</h5>
-        <p class="font-normal text-gray-700 p-6 text-center">Feel free to email me, or DM me on Twitter.</p>
-
-        <br>
-
-        <a href="mailto:william.herring.au@gmail.com" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
-            Email
-        </a>
-        <a href="https://twitter.com/wherring_au" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex justify-center items-center">
-            Twitter
-        </a>
-    </div>
-</div>
-
-<div class="w-screen bottom-0 left-0">
-    <p class="font-normal text-gray-700 p-6">© 2021 William Herring. All Rights Reserved.</p>
-</div>
 </body>
 </html>
