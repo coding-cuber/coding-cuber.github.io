@@ -450,6 +450,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -469,6 +473,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-0 {
   right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .z-50 {
@@ -503,6 +515,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -535,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-64 {
   height: 16rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-12 {
@@ -579,6 +607,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-40 {
   width: 10rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-7xl {
@@ -725,6 +757,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -790,8 +837,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-mono {
@@ -911,6 +974,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -1008,6 +1076,11 @@ html {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-neutral-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-70:hover {
