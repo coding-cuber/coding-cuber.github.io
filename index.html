@@ -8,111 +8,68 @@
     <title>William Herring</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href=https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
         } 
         body {
-            font-family: 'Inter';
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0a0a0a;
+            color: white;
+        }
+        .scroll-button {
+            animation: float 3s linear infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="flex fixed bg-white top-0 w-screen">
-        <button class="fixed p-4 m-2 rounded-lg w-16 bg-black bg-opacity-0 active:bg-opacity-10">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+    <nav class="flex fixed top-0 w-screen" style="background-color: #0a0a0a;">
+        <button class="fixed p-4 m-2 rounded-lg w-16 bg-white bg-opacity-0 active:bg-opacity-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#fff"></path></svg>
         </button>
         <div class="ml-auto flex items-center p-4 space-x-6 right-0">
             <a href="https://github.com/william-herring">
-                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z" fill="#fff"></path></svg>
             </a>
             <a href="https://twitter.com/wherring_au">
-                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path></svg>
+                <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z" fill="#fff"></path></svg>
             </a>
         </div>
     </nav>
     <div class="flex h-screen w-screen items-center justify-center">
         <div class="w-2/3 flex flex-col items-center">
-            <img class="w-40 mb-6 rounded-full shadow-2xl" src="images/me.JPG">
-            <h1 class="text-center font-bold text-4xl mb-6">I'm William</h1>
-            <p class="text-lg mb-4">
-                I'm a student and developer from Melbourne with a passion for programming and computers. My goal is to
-                find innovative solutions to real-world problems with software. In doing so, I look for opportunities
-                to extend my knowledge and try new technologies. I believe that any solution is only effective if it is
-                accessible to anyone, which is why much of my work is open-source.
-            </p>
-            <a href="#projects" class="text-blue-600 font-semibold text-lg">Scroll for more</a>
+            <div>
+                <h1 class="font-extrabold text-4xl mb-6">I'm William</h1>
+                <p class="text-lg font-normal mb-4">
+                    > I'm a fullstack hobbyist developer from Melbourne
+                    <br>
+                    > I like building cool stuff
+                </p>
+                <a href="#about-me" class="text-blue-600 font-semibold text-lg">Learn more</a>
+            </div>
         </div>
+        <a href="#about-me" class="scroll-button flex flex-col items-center absolute bottom-0 p-5">
+            <p class="text-sm">Scroll for more</p>
+            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z" fill="#fff"></path></svg>
+        </a>
     </div>
-    <div class="flex min-h-screen w-screen items-center justify-center">
-        <div id="projects" class="w-2/3 flex flex-col items-center space-y-6">
-            <h1 class="text-center font-bold text-4xl mb-6">Featured Projects</h1>
-            <div class="flex flex-col items-center shadow-md p-6 w-full rounded-xl">
-                <div class="mb-6">
-                    <img class="h-80" src="images/ausstaterankings.png">
-                </div>
-                <h2 class="font-semibold text-2xl mb-3">Australian State and Territory Speedcubing Rankings</h2>
-                <p class="text-lg mb-6">A state and territory rankings site for official speedcubing results. Users can log in with their
-                    WCA profile to sync their results and register their state or territory of residence.
-                </p>
-                <div class="flex space-x-3 w-full mb-6">
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Flask</p>
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Web</p>
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Community</p>
-                </div>
-                <div class="flex space-x-3 justify-start w-full">
-                    <a href="https://github.com/william-herring/ausstaterankings">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z" fill="#2563eb"></path></svg>
-                    </a>
-                    <a href="https://ausstaterankings.onrender.com">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z" fill="#2563eb"></path></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-col items-center shadow-md p-6 w-full rounded-xl">
-                <div class="mb-6">
-                    <img class="h-80" src="images/cloudvision.png">
-                </div>
-                <h2 class="font-semibold text-2xl mb-3">Cloudvision</h2>
-                <p class="text-lg mb-6">Created for the Victorian Science Talent Search 2021, Cloudvision is a mobile app that leverages AI
-                    to identify types of clouds.
-                </p>
-                <div class="flex space-x-3 w-full mb-6">
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Flutter</p>
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Mobile</p>
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Machine Learning</p>
-                </div>
-                <div class="flex space-x-3 justify-start w-full">
-                    <a href="https://github.com/william-herring/cloudvision">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z" fill="#2563eb"></path></svg>
-                    </a>
-                    <a href="https://apps.apple.com/au/app/cloudvision/id1597605747">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z" fill="#2563eb"></path></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-col items-center shadow-md p-6 w-full rounded-xl">
-                <div class="mb-6">
-                    <img class="h-80" src="images/liveed.png">
-                </div>
-                <h2 class="font-semibold text-2xl mb-3">Liveed</h2>
-                <p class="text-lg mb-6">Liveed is a site built as a prototype for a medium to create and share live blog feeds. Users
-                    can create and subscribe to live feeds and update them with posts. 
-                </p>
-                <div class="flex space-x-3 w-full mb-6">
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Next.js</p>
-                    <p class="bg-green-300 text-green-600 font-medium rounded-full p-1 px-2">Web</p>
-                </div>
-                <div class="flex space-x-3 justify-start w-full">
-                    <a href="https://github.com/william-herring/liveed">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z" fill="#2563eb"></path></svg>
-                    </a>
-                    <a href="https://liveed.vercel.app/">
-                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z" fill="#2563eb"></path></svg>
-                    </a>
-                </div>
-            </div>
-    </div>
+    <div class="flex flex-col min-h-screen w-screen items-center">
+        <div id="about-me" class="w-2/3 flex flex-col items-center space-y-6">
+            <h1 class="flex text-center font-bold text-4xl mb-6 mt-24"><p class="text-white mr-4 opacity-30">#</p>About me</h1>
+            <p>
+                I'm 16 years old based in Melbourne, Australia. Programming has been my passion since I was 8 years old.
+                I love using computers to find solutions to problems. For me, software development is all about finding new ways
+                to solve new problems. Outside of programming, I'm also a competitive <a href="#speedcubing" class="text-blue-600 font-semibold">speedcuber</a>.
+            </p>
+        </div>
 </body>
 </html>
