@@ -29,10 +29,14 @@
                 bottom: 15px;
             }
         }
+        .button:hover {
+            background-color: white;
+            color: #0a0a0a;
+        }
     </style>
 </head>
 <body>
-    <nav class="flex fixed top-0 w-screen" style="background-color: #0a0a0a;">
+    <nav class="flex fixed top-0 w-screen z-10" style="background-color: #0a0a0a;">
         <button class="fixed p-4 m-2 rounded-lg w-16 bg-white bg-opacity-0 active:bg-opacity-10">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#fff"></path></svg>
         </button>
@@ -62,14 +66,29 @@
             <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z" fill="#fff"></path></svg>
         </a>
     </div>
-    <div class="flex flex-col min-h-screen w-screen items-center">
-        <div id="about-me" class="w-2/3 flex flex-col items-center space-y-6">
+    <div class="flex h-screen flex-col w-screen items-center">
+        <div id="about-me" class="w-2/3 flex flex-col space-y-6">
             <h1 class="flex text-center font-bold text-4xl mb-6 mt-24"><p class="text-white mr-4 opacity-30">#</p>About me</h1>
             <p>
                 I'm 16 years old based in Melbourne, Australia. Programming has been my passion since I was 8 years old.
                 I love using computers to find solutions to problems. For me, software development is all about finding new ways
-                to solve new problems. Outside of programming, I'm also a competitive <a href="#speedcubing" class="text-blue-600 font-semibold">speedcuber</a>.
+                to solve new problems. Outside of programming, I'm very active in the <a href="#speedcubing" class="text-blue-600 font-semibold">speedcubing</a> community.
+                Most of my work is open-source and I love to share it with others so feel free to take a look.
+            </p>
+            <div class="flex space-x-3">
+                <a class="button border-2 border-white p-3 font-semibold" href="/projects.html">
+                    Check out my work
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex h-screen flex-col w-screen items-center">
+        <div id="speedcubing" class="w-2/3 flex flex-col space-y-6">
+            <h1 class="flex text-center font-bold text-4xl mb-6 mt-24"><p class="text-white mr-4 opacity-30">#</p>Speedcubing</h1>
+            <p>
+                I began speedcubing in early 2019.
             </p>
         </div>
+    </div>
 </body>
 </html>
